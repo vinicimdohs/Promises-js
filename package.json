@@ -1,0 +1,28 @@
+{
+  "name": "aula4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev":"npx mocha -w --exit test/",
+    "test:cov":"npx nyc --check-coverage --instrument --reporter=html --reporter=text npm test",
+    "test": "npx mocha --parallel test/",
+    "start": "node src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicimdohs/Promises-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinicimdohs/Promises-js/issues"
+  },
+  "homepage": "https://github.com/vinicimdohs/Promises-js#readme",
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.3"
+  }
+}
